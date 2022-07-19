@@ -31,6 +31,9 @@ class MyArray extends Array {
   // Overwrite species to the parent Array constructor
   static get [Symbol.species]() { return Array; }
 }
+
+class 
+
 let a = new MyArray(1,2,3);
 let mapped = a.map(x => x * x);
 
@@ -48,5 +51,10 @@ console.log(mapped instanceof Array);   // true
 
 ## See also
 
+- {{jsxref("Array.@@species", "Array[@@species]")}}
+- {{jsxref("ArrayBuffer.@@species", "ArrayBuffer[@@species]")}}
 - {{jsxref("Map.@@species", "Map[@@species]")}}
+- {{jsxref("Promise.@@species", "Promise[@@species]")}}
+- {{jsxref("RegExp.@@species", "RegExp[@@species]")}}
 - {{jsxref("Set.@@species", "Set[@@species]")}}
+- {{jsxref("TypedArray.@@species", "TypedArray[@@species]")}}
